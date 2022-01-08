@@ -1,10 +1,17 @@
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function SquareEmpty() {
+function SquareEmpty({ setNumberSquare, numberSquare }) {
+  function addSquareHandler() {
+    setNumberSquare(numberSquare + 1);
+  }
   return (
-    <button className="squareEmpty">
-      <FontAwesomeIcon icon={faPlus} />
+    <button
+      className="square-empty"
+      onClick={addSquareHandler}
+      aria-label="Add square"
+    >
+      <FontAwesomeIcon icon={faPlus} className="plus-icon" aria-hidden="true" />
     </button>
   );
 }

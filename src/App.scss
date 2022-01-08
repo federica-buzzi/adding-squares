@@ -1,17 +1,37 @@
-
-.App {
-  text-align: center;
-}
-
-.squareEmpty {
+.square-empty{
   width: 36px;
   height: 36px;
- 
- 
- 
- 
   background: #edfaff;
   border: 1px dashed #013a63;
   box-sizing: border-box;
   border-radius: 4px;
+  margin: 4px; 
+
+  .plus-icon{
+    color: #2A3A48;
+  }
 }
+
+.square-filled{
+  width: 36px;
+  height: 36px;
+  background: #013A63;
+  border-radius: 4px;
+  margin: 4px; 
+}
+
+.title{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 20px;
+  color: #2A3A48;
+}
+
+.flex-container{
+  display: flex; 
+  margin-left: 10px;
+}
+
