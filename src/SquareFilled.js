@@ -1,5 +1,5 @@
-function SquareFilled() {
-  return <div className="square-filled" />;
+function SquareFilled({ id }) {
+  return <div className="square-filled" aria-label={id} />;
 }
 
 export default SquareFilled;

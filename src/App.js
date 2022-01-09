@@ -9,12 +9,10 @@ function App() {
   return (
     <div className="App">
       <Title numberSquare={numberSquare} />
-      <div className="flex-container">
-        <div className="flex-container">
-          {[...Array(numberSquare)].map((value, index) => {
-            return <SquareFilled key={index} />;
-          })}
-        </div>
+      <div className="container">
+        {[...Array(numberSquare)].map((value, index) => {
+          return <SquareFilled key={index} id={index + 1} />;
+        })}
         <SquareEmpty
           numberSquare={numberSquare}
           setNumberSquare={setNumberSquare}
